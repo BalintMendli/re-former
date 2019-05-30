@@ -1,4 +1,5 @@
 <%= form_for @user do |f| %>
+  <%= render "error_messages" %>
   <%= f.label :username, 'Your username here: ' %>
   <%= f.text_field :username, value: 'username' %><br />
   <%= f.label :email, 'Email: ' %>
