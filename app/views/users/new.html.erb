@@ -22,7 +22,7 @@
 <%= form_for @user do |f| %>
   <%= render "error_messages" %>
   <%= f.label :username, 'Your username here: ' %>
-  <%= f.text_field :username, value: 'username' %><br />
+  <%= f.text_field :username %><br />
   <%= f.label :email, 'Email: ' %>
   <%= f.email_field :email, placeholder: 'example@example.com' %><br />
   <%= f.label :password, 'Password: ' %>
